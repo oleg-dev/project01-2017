@@ -1,0 +1,76 @@
+header {
+        background: rgba(0, 255, 0, 0.1);
+    height: 51px;
+    max-width: 1170px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: bottom;
+    padding-top: 55px;
+    position: fixed;
+    color: #fff;
+}
+.mavro-logo {
+    width: 178px;
+    height: 51px;
+    /*display:inline-block;*/
+}
+header .mavro-logo {
+    text-transform: uppercase;
+}
+.top-nav {
+    text-transform: uppercase;
+    font: bold 13px/1 PTSans;
+}
+.top-nav ul {
+    padding-top: 18px;
+}
+.top-nav > ul > li {
+    display: inline-block;
+    margin-right: 45px;
+    vertical-align: middle;
+}
+.top-nav > ul > li:last-of-type {
+    display: inline-block;
+    margin-right:0;
+}
+.sign-in-wrap {
+    width: 291px;
+    height: 49px;
+}
+
+.try-mavro {
+    width: 193px;
+    border: 2px solid rgba(255, 255, 255, 1.23);
+    border-radius: 21px;
+    padding: 6px;
+    float: left;
+}
+.try-mavro > * {
+    display: inline-block;
+}
+.try-mavro-text {
+    text-transform: uppercase;
+    font: bold 14px/1 PTSans;
+    vertical-align: super;
+    position: relative;
+    top: -4px;
+    left: 5px;
+}
+.sign-in {
+    background: #1abc9c;
+    border-radius: 85px;
+    height: 51px;
+    width: 96px;
+    float: right;
+    text-align: center;
+    font: bold 14px/1 PTSans;
+    text-transform: uppercase;
+    margin-left: -20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
