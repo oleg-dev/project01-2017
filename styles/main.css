@@ -169,3 +169,58 @@ button.watch-video {
 
 /*======================== block how-works styles ==========================*/
 
+.how-works {
+    width:100%;
+    height:747px;
+    background:#fff;
+}
+.section2-overlay {
+    width:100%;
+    height:100%;
+    position: relative;
+    background:url("../media/images/section2-overlay-bg.png") no-repeat;
+    background-size: contain;
+}
+.section2-content {
+    /*height: 100%;*/
+    max-width: 1170px;
+    margin:0 auto;
+    padding-top:55px;
+
+}
+.how-works-header {
+    text-transform: uppercase;
+    color:#292935;
+    margin:0 auto;
+    text-align:center;
+    font:400 4.5rem AkzidenzGroteskPro-LightCn;
+    margin-bottom: 58px;
+}
+.text-content {
+        /*background: rgba(0,255,0,0.2);*/
+    width: 468px;
+    height:390px;
+    font: 400 0.99rem/1.5 PTSans-Regular;
+    float:left;
+}
+.text-content-p1 {
+    margin-bottom: 28px;
+}
+.text-content-p1 span {
+    color:#093a93;
+    font:400 3rem AkzidenzGroteskPro-LightCn;
+}
+.text-content-p2 {
+    margin-bottom: 28px;
+}
+.devices-img {
+    width: 60%;
+    min-width: 500px;
+    float: right;
+    position: relative;
+    left: -8px;
+    top: -8px;
+}
+
+/*======================== end block how-works styles ==========================*/
+

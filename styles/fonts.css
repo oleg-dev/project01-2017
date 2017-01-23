@@ -52,3 +52,8 @@
     src: url("../media/fonts/AkzidenzGroteskPro-Cn.otf") format('opentype');
     font-weight:400;
 }
+    @font-face {
+    font-family: "PTSans-Regular";
+    src: url("../media/fonts/PTS55F.ttf") format('truetype');
+    font-weight:400;
+}
