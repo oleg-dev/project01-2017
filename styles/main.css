@@ -231,11 +231,202 @@ button.watch-video {
 
 
 
+/*======================== bitcoin block styles ==========================*/
+.calculator-header{text-transform: uppercase;
+    color:#292935;
+    margin:0 auto;
+    text-align:center;
+    font:400 4.5rem AkzidenzGroteskPro-LightCn;
+}
+.bitcoin-section{
+    background: url(../media/images/bg-section-4.jpg) no-repeat;
+    background-size: 100% 100%;
+    height: 778px;
+    width: 100%;
+
+}
+.ipad{
+    background: url(../media/images/tablet.png) no-repeat;
+    background-size: 100% 100%;
+    height: 519px;
+    width: 1020px;
+    margin: 20px auto;
+    padding-top: 27px;
+}
+.chart{
+    background: url(../media/images/chart.jpg) no-repeat;
+    background-size: 100% 100%;
+    height: 360px;
+    width: 819px;
+    margin-top: 17px;
+    margin-left: 102px;
+}
+/*======================== end bitcoin block styles ==========================*/
+
+
+
+
+
 
 .zaglushka {
     height:1641px;
     width:100%;
 }
+
+
+
+
+
+
+
+/*======================== calculator block styles ==========================*/
+.calculator-wrap{
+    background: url(../media/images/bg-section-3.jpg) no-repeat;
+    background-size: 100% 100%;
+    height: 912px;
+    width: 100%;
+
+}
+.calculator{
+    max-width: 810px;
+    margin:0 auto;
+}
+.mouse-icon{
+    margin-top: -36px;
+    position: relative;
+    left: 44%;
+}
+.calculator-header{
+    position: relative;
+}
+.calculator-wrap .calculator .section2-content{
+    padding-top: -5px;
+}
+
+
+.calculator-header::after{
+    content: "";
+    background-color: #123998;
+    display: block;
+    height: 23px;
+    width: 2px;
+    margin: 12px auto 0 auto;
+}
+.slider-wrap{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    font-size:16px;
+    padding: 0 5px;
+}
+.slider-wrap div{
+    position: relative;
+    left: -66px;
+}
+.slider-point-wrap{
+    text-align: center;
+}
+.slider-img{
+    width: 100%;
+}
+.slider-point-img{
+    width: 80px;
+    height: 80px;
+    background-image: url(../media/images/slider-point-value.png);
+}
+.prise-wrap{
+    width: 30px;
+    border-radius: 6px;
+    padding: 5px;
+    background-color: #e1f9fb;
+}
+.price-value{
+    margin-left: 26px;
+}
+.number{
+    padding-left: 20px;
+    padding-top: 5px;
+}
+.number .new-number{
+    width: 246px;
+    display: block;
+    float: left;
+}
+.invest-wrap{
+    height: 251px;
+    padding: 5px;}
+.invest{
+    width: 33%;
+    float:left; height: 100%;
+    text-align: center;
+    border-right: 2px dotted #b4b7bc;
+}
+.invest:last-child{
+    border:none;
+}
+.invest span{
+    font:400 3.5rem PTSans-Regular;
+}
+.invest p{
+    line-height: 23px;
+}
+.balans-mavro{
+    text-align: center;
+    margin-top: 78px;
+    padding: 20px;
+    line-height: 23px;
+    color:#fff;
+    font-size: 18px;
+    font-family: PTSans-Regular;
+    background-size: 100% 100%;
+    width: 100%;
+}
+.balans-mavro h4{
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+/*======================== end calculator block styles ==========================*/
+
+/*======================== bitcoin block styles ==========================*/
+.calculator-header{text-transform: uppercase;
+    color:#292935;
+    margin:0 auto;
+    text-align:center;
+    font:400 4.5rem AkzidenzGroteskPro-LightCn;
+}
+.bitcoin-section{
+    background: url(../media/images/bg-section-4.jpg) no-repeat;
+    background-size: 100% 100%;
+    height: 778px;
+    width: 100%;
+
+}
+.ipad{
+    background: url(../media/images/tablet.png) no-repeat;
+    background-size: 100% 100%;
+    height: 519px;
+    width: 1020px;
+    margin: 20px auto;
+    padding-top: 27px;
+}
+.chart{
+    background: url(../media/images/chart.jpg) no-repeat;
+    background-size: 100% 100%;
+    height: 360px;
+    width: 819px;
+    margin-top: 17px;
+    margin-left: 102px;
+}
+/*======================== end bitcoin block styles ==========================*/
+
+
+
+
+
+
+
+
 
 
 
