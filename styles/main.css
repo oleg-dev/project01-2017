@@ -17,10 +17,13 @@ header {
     padding-top: 55px;
     position: fixed;
     color: #fff;
+    z-index: 5;
 }
 .mavro-logo {
     width: 178px;
     height: 51px;
+    background: url(../media/images/logo-white.png);
+    background-size: contain;
 }
 header .mavro-logo {
     text-transform: uppercase;
@@ -41,6 +44,9 @@ header .mavro-logo {
 .top-nav > ul > li:last-of-type {
     display: inline-block;
     margin-right:0;
+}
+.top-nav > ul > li a {
+    color:white;
 }
 .sign-in-wrap {
     width: 291px;
@@ -186,7 +192,6 @@ button.watch-video {
     max-width: 1170px;
     margin:0 auto;
     padding-top:55px;
-
 }
 .how-works-header {
     text-transform: uppercase;
@@ -224,3 +229,291 @@ button.watch-video {
 
 /*======================== end block how-works styles ==========================*/
 
+
+
+
+.zaglushka {
+    height:1641px;
+    width:100%;
+}
+
+
+
+
+
+/*======================== block mavro-team styles ==========================*/
+
+.mavro-team {
+    height:716px;
+    width:100%;
+    background:url("../media/images/section-5-bg.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.mavro-team-content {
+    padding-top:55px;
+    max-width: 1170px;
+    margin:0 auto;
+}
+.mavro-team-header {
+    text-transform: uppercase;
+    color:#fff;
+    margin:0 auto;
+    text-align:center;
+    font:400 4.5rem AkzidenzGroteskPro-LightCn;
+    margin-bottom: -34px;
+}
+.mavro-team-header:after {
+    content: "";
+    height: 23px;
+    width: 1px;
+    display: block;
+    margin: 18px auto 0 auto;
+    background: #fff;
+}
+.mavro-team-subheader {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: left;
+    font: 400 2.5rem AkzidenzGroteskPro-LightCn;
+    letter-spacing: 0.2rem;
+    margin: 0 0 55px 74px;
+}
+.mavro-team-subheader:before {
+    content: "-";
+    display: inline-block;
+    color: #98e0e7;
+    margin-right: 5px;
+}
+.mavro-team-content-text {
+    max-width:1100px;
+    color:#fff;
+    text-align:center;
+    font: 400 0.99rem/1.5 PTSans-Regular;
+}
+.mavro-team-label {
+    background: url(../media/images/team-mavro-label.png) no-repeat;
+    background-size: contain;
+    width: 98%;
+    height: 140px;
+    position: relative;
+    top: -163px;
+    left: -270px;
+}
+.notebook-img {
+    background: url(../media/images/notebook.png) no-repeat;
+    background-size: contain;
+    width: 751px;
+    height: 433px;
+    margin: 0 auto;
+    position: relative;
+    top: -111px;
+}
+.play-video {
+    background: url(../media/images/play-button.png) no-repeat;
+    background-size: contain;
+    width: 79px;
+    height: 79px;
+    border: none;
+    outline: none;
+    display: block;
+    margin: 0 auto;
+    top: 129px;
+    position: relative;
+    cursor:pointer;
+}
+
+/*====================== end block mavro-team styles ========================*/
+
+
+
+
+/*====================== block statistic styles ========================*/
+
+.block-statistic {
+    background: #f1f4f9;
+    height: 151px;
+    width: 100%;
+    padding-top: 84px;
+}
+.statistic-content {
+    max-width: 1170px;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-between;
+}
+.stat-point {
+        /*background:rgba(0,0,255,0.3);*/
+    min-width:50px;
+    height:95px;
+}
+.stat-point > * {
+    margin:0 auto;
+}
+.stat-point img {
+    width:30px;
+    height:30px;
+    margin:0 auto;
+    display: block;
+}
+.stat-point .number {
+    font: 400 2.3rem/1 AkzidenzGroteskPro-LightCn;
+    color: #00bdc7;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5px;
+}
+.stat-point .number-title {
+    font: 400 1.5rem AkzidenzGroteskPro-LightCn;
+    color:#292935;
+    text-align: center;
+}
+
+/*==================== end block statistic styles ======================*/
+
+
+
+/*==================== block download styles ======================*/
+
+.block-download {
+    background: #00bdc7;
+    height:174px;
+    width:100%;
+    padding-top: 43px;
+}
+.button-wrap {
+    height:49px;
+    max-width: 615px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+h4.join {
+    text-align:center;
+    margin:0 auto;
+    text-transform: uppercase;
+    font: 400 1.5rem AkzidenzGroteskPro-LightCn;
+    color:#fff;
+    margin-bottom: 41px;
+}
+.button-wrap > button {
+    width:196px;
+    height: 100%;
+    font: bold 0.88rem/1 PTSans;
+    color: #000;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+    border: none;
+    border-radius:25px;
+    background: #fff;
+    transition:1s 0s ease;
+}
+.button-wrap > button:hover {
+    box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+    color:#00bdc7;
+}
+
+/*================== end block download styles ====================*/
+
+
+
+
+/*================== bottom menu styles ====================*/
+
+.block-bottom-menu {
+    height:117px;
+    width:100%;
+    background: #fff;
+}
+.bottom-menu-content {
+    height:51px;
+    max-width: 1170px;
+    margin:0 auto;
+    padding-top: 31px;
+}
+.logo-bottom {
+    width:178px;
+    height:51px;
+    display:block;
+    float:left;
+    background:url(../media/images/logo-black.png);
+    background-size: contain;
+}
+
+.bottom-nav {
+    text-transform: uppercase;
+    font: bold 0.82rem/1 PTSans;
+    color:#000;
+    float:right;
+}
+.bottom-nav ul {
+    padding-top: 18px;
+    margin-left: 12px;
+}
+.bottom-nav > ul > li {
+    display: inline-block;
+    margin-right: 45px;
+    vertical-align: middle;
+}
+.bottom-nav > ul > li:last-of-type {
+    display: inline-block;
+    margin-right:0;
+}
+.bottom-nav > ul > li a {
+    color:black;
+}
+
+/*================ end bottom menu styles ==================*/
+
+
+
+
+/*====================== footer styles =====================*/
+
+footer {
+    background: #f1f4f9;
+    height: 125px;
+    color: black;
+}
+.footer-content {
+    max-width: 1170px;
+    margin:0 auto;
+}
+.social-wrap {
+    float:left;
+    padding-top:40px;
+}
+.social-wrap p{
+    font: 400 0.8rem/1 PTSans-Regular;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+.socials > * {
+    display: inline-block;
+    width:26px;
+    height:26px;
+}
+.facebook-link {
+    background: url(../media/images/facebook-logo.png);
+    margin-right: 3px;
+}
+.twitter-link {
+    background: url(../media/images/twitter-logo.png);
+}
+.contacts {
+    width:210px;
+    float:right;
+    padding-top: 18px;
+}
+.contacts p {
+    text-align: left;
+    font: 400 0.85rem/1 PTSans-Regular;
+    color: #292935;
+    margin-bottom: 12px;
+}
+.contacts p span {
+    color: #00bdc7;
+}
+
+/*==================== end footer styles ===================*/
