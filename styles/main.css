@@ -5,7 +5,7 @@
 /*======================== header styles ============================*/
 
 header {
-        /*background: rgba(0, 255, 0, 0.1);*/
+    /*background: rgba(0, 255, 0, 0.1);*/
     height: 51px;
     max-width: 1170px;
     margin: auto;
@@ -99,7 +99,7 @@ section.block-news {
     width:100%;
 }
 .news-content-wrap {
-        /*background: rgba(0,0,255,0.1);*/
+    /*background: rgba(0,0,255,0.1);*/
     height:100%;
     max-width: 1170px;
     margin: 0 auto;
@@ -108,7 +108,7 @@ section.block-news {
     /*align-items: center;*/
 }
 .news-content {
-        /*background: rgba(0,255,0,0.1);*/
+    /*background: rgba(0,255,0,0.1);*/
     height: 365px;
     width: 387px;
     padding-top: 220px;
@@ -202,7 +202,7 @@ button.watch-video {
     margin-bottom: 58px;
 }
 .text-content {
-        /*background: rgba(0,255,0,0.2);*/
+    /*background: rgba(0,255,0,0.2);*/
     width: 468px;
     height:390px;
     font: 400 0.99rem/1.5 PTSans-Regular;
@@ -263,47 +263,36 @@ button.watch-video {
 }
 /*======================== end bitcoin block styles ==========================*/
 
-
-
-
-
-
 .zaglushka {
     height:1641px;
     width:100%;
 }
 
-
-
-
-
-
-
 /*======================== calculator block styles ==========================*/
-.calculator-wrap{
+.calculator{
     background: url(../media/images/bg-section-3.jpg) no-repeat;
     background-size: 100% 100%;
-    height: 912px;
     width: 100%;
-
 }
-.calculator{
+
+.calculator > div{
     max-width: 810px;
     margin:0 auto;
+    font: 400 0.99rem/1.5 PTSans-Regular;
 }
-.mouse-icon{
+
+.calculator .mouse-icon{
     margin-top: -36px;
     position: relative;
     left: 44%;
 }
-.calculator-header{
-    position: relative;
-}
-.calculator-wrap .calculator .section2-content{
+.calculator .section2-content{
     padding-top: -5px;
 }
 
-
+.calculator-header{
+    position: relative;
+}
 .calculator-header::after{
     content: "";
     background-color: #123998;
@@ -318,30 +307,34 @@ button.watch-video {
     align-items:flex-end;
     font-size:16px;
     padding: 0 5px;
+    margin-top: 75px;
 }
 .slider-wrap div{
     position: relative;
-    left: -66px;
+    left: -60px;
+
 }
-.slider-point-wrap{
+.slider-wrap > div{
     text-align: center;
 }
-.slider-img{
-    width: 100%;
-}
-.slider-point-img{
+
+.slider-wrap .slider-point-img{
     width: 80px;
     height: 80px;
     background-image: url(../media/images/slider-point-value.png);
 }
+
+.slider-img{
+    width: 100%;
+}
+
 .prise-wrap{
-    width: 30px;
     border-radius: 6px;
-    padding: 5px;
     background-color: #e1f9fb;
 }
 .price-value{
-    margin-left: 26px;
+    margin-left: 15px;
+    margin-bottom: 2px;
 }
 .number{
     padding-left: 20px;
@@ -353,38 +346,42 @@ button.watch-video {
     float: left;
 }
 .invest-wrap{
-    height: 251px;
+    height: 212px;
     padding: 5px;}
 .invest{
     width: 33%;
-    float:left; height: 100%;
+    float:left; height: 61%;
     text-align: center;
     border-right: 2px dotted #b4b7bc;
+    margin-top: 50px;
 }
 .invest:last-child{
     border:none;
 }
 .invest span{
-    font:400 3.5rem PTSans-Regular;
+    font:400 2.2rem PTSans-Regular;
 }
 .invest p{
     line-height: 23px;
 }
 .balans-mavro{
-    text-align: center;
-    margin-top: 78px;
-    padding: 20px;
-    line-height: 23px;
-    color:#fff;
-    font-size: 18px;
-    font-family: PTSans-Regular;
     background-size: 100% 100%;
+    color:#fff;
+    font: 400 0.99rem/1.5 PTSans-Regular;
+    text-align: center;
+    margin-top: 84px;
+    line-height: 23px;
     width: 100%;
 }
+.balans-mavro p{
+    font: 400 0.99rem/1.5 PTSans-Regular;
+}
 .balans-mavro h4{
-    padding-bottom: 5px;
+    font-weight: normal;
+    padding-bottom: 10px;
     text-transform: uppercase;
 }
+
 
 /*======================== end calculator block styles ==========================*/
 
@@ -406,7 +403,7 @@ button.watch-video {
     background: url(../media/images/tablet.png) no-repeat;
     background-size: 100% 100%;
     height: 519px;
-    width: 1020px;
+    width: 980px;
     margin: 20px auto;
     padding-top: 27px;
 }
@@ -414,22 +411,11 @@ button.watch-video {
     background: url(../media/images/chart.jpg) no-repeat;
     background-size: 100% 100%;
     height: 360px;
-    width: 819px;
+    width: 782px;
     margin-top: 17px;
     margin-left: 102px;
 }
 /*======================== end bitcoin block styles ==========================*/
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*======================== block mavro-team styles ==========================*/
@@ -533,7 +519,7 @@ button.watch-video {
     justify-content: space-between;
 }
 .stat-point {
-        /*background:rgba(0,0,255,0.3);*/
+    /*background:rgba(0,0,255,0.3);*/
     min-width:50px;
     height:95px;
 }
