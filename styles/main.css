@@ -31,7 +31,7 @@ header .mavro-logo {
 .top-nav {
     text-transform: uppercase;
     font: bold 0.82em PTSans;
-    font-style:bold;
+    font-style: bold;
     text-shadow: 0 0 8px #093a93;
 }
 .top-nav ul {
@@ -686,6 +686,10 @@ footer {
 /*==================== adaptation styles ===================*/
 @media screen and (max-width: 1200px) {
     body section,
+    footer {
+
+    }
+    body section,
     header,
     footer {
         width:96% !important;
@@ -708,7 +712,7 @@ footer {
         height: auto;
     }
     .how-works-header {
-        text-shadow: 0px 0px 6px white;
+        text-shadow: 0 0 6px white;
     }
     .devices-img {
         width: 80%;
@@ -724,6 +728,64 @@ footer {
         font-size: 1.1em;
         height: auto;
     }
-    .text-content p {
+    .invest-wrap p {
+        font-size: 1.2em;
     }
+    .invest:nth-of-type(2) {
+        margin: 0 60px;
+    }
+    .balans-mavro {
+        margin-top: 26px;
+        font: bold 1em/1.5 PTSans;
+    }
+    .bitcoin-section {
+        height: auto;
+    }
+    .ipad {
+        width: 94%;
+        /* height: auto; */
+        margin: 20px auto 0 auto;
+        background-size: contain;
+    }
+    .chart {
+        width: 76%;
+        margin-top: 2%;
+        margin-left: 12%;
+        background-size: contain;
+    }
+    .mavro-team-content-text {
+        font: 400 1.2em/1.5 PTSans-Regular;
+    }
+    .block-statistic {
+        padding-top: 160px;
+    }
+    .block-download,
+    .block-bottom-menu,
+    footer {
+        font-size: 110%;
+    }
+    .contacts {
+        width: 27%;
+    }
+}
+@media screen and (max-width: 850px) {
+    .invest:nth-of-type(2) {
+        width: 330px;
+        margin: 0 55px;
+    }
+    .block-statistic {
+        padding-top: 225px;
+    }
+}
+@media screen and (max-width: 800px) {
+    body {
+        font-size: 120%;
+    }
+    .news-content {
+        width: 465px;
+    }
+    .invest-wrap {
+        font-size: 105%;
+    }
+
 }
