@@ -779,13 +779,17 @@ footer {
 }
 @media screen and (max-width: 800px) {
     body {
-        font-size: 120%;
+        /*font-size: 120%;*/
     }
     .news-content {
         width: 465px;
     }
     .invest-wrap {
-        font-size: 105%;
+        /*font-size: 105%;*/
+    }
+    .invest:nth-of-type(2) {
+        width: 260px;
+        margin: 0 50px;
     }
 
 }

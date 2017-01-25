@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="styles/main.css" type="text/css" />
     <link rel="stylesheet" href="styles/iestyle.css" type="text/css" />
     <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> -->
+
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
 
 <body>
@@ -21,18 +24,18 @@
     <!--<img src="media/images/logo-white.png" alt="Logo Mavro" class="mavro-logo">-->
     <a href="" class="mavro-logo"></a>
     <nav class="top-nav">
-        <ul>
+        <ul id="menu">
             <li>
-                <a href="">Новости</a>
+                <a href="#section-1">Новости</a>
             </li>
             <li>
-                <a href="">Как работает</a>
+                <a href="#section-2">Как работает</a>
             </li>
             <li>
-                <a href="">Калькулятор</a>
+                <a href="#section-3">Калькулятор</a>
             </li>
             <li>
-                <a href="">Команда</a>
+                <a href="#section-4">Команда</a>
             </li>
         </ul>
     </nav>
@@ -45,7 +48,7 @@
     </div>
 </header>
 
-<section class="block-news">
+<section class="block-news" id="section-1">
     <div class="news-content-wrap">
         <div class="news-content">
             <h1 class="news-header">MAVRO</h1>
@@ -62,7 +65,7 @@
 
 <div class="clear"></div>
 
-<section class="how-works">
+<section class="how-works" id="section-2">
     <div class="section2-overlay">
         <div class="section2-content">
             <h2 class="how-works-header">Как это работает?</h2>
@@ -82,7 +85,7 @@
     </div>
 </section>
 
-<section class="calculator">
+<section class="calculator" id="section-3">
     <div>
         <img src="media/images/mouse-icon.png" alt="mouse-icon" class="mouse-icon"/>
         <h2 class="calculator-header how-works-header">Калькулятор доходности</h2>
@@ -107,24 +110,24 @@
             <span>100</span>
         </div>
         <!--<div class="invest-wrap">-->
-            <!--<div class="invest">-->
-                <!--<span>585$</span>-->
-                <!--<p>Предполагаемая сумма <br/> инвестиций</p>-->
-                <!--<span>5$</span>-->
-                <!--<p>в неделю</p>-->
-            <!--</div>-->
-            <!--<div class="invest">-->
-                <!--<span>5885$</span>-->
-                <!--<p>Прибыль за год</p>-->
-                <!--<span>522$</span>-->
-                <!--<p>Прибыль в месяц</p>-->
-            <!--</div>-->
-            <!--<div class="invest">-->
-                <!--<span>544$</span>-->
-                <!--<p>за пол года</p>-->
-                <!--<span>5$</span>-->
-                <!--<p>в день</p>-->
-            <!--</div>-->
+        <!--<div class="invest">-->
+        <!--<span>585$</span>-->
+        <!--<p>Предполагаемая сумма <br/> инвестиций</p>-->
+        <!--<span>5$</span>-->
+        <!--<p>в неделю</p>-->
+        <!--</div>-->
+        <!--<div class="invest">-->
+        <!--<span>5885$</span>-->
+        <!--<p>Прибыль за год</p>-->
+        <!--<span>522$</span>-->
+        <!--<p>Прибыль в месяц</p>-->
+        <!--</div>-->
+        <!--<div class="invest">-->
+        <!--<span>544$</span>-->
+        <!--<p>за пол года</p>-->
+        <!--<span>5$</span>-->
+        <!--<p>в день</p>-->
+        <!--</div>-->
 
         <div class="invest-wrap">
 
@@ -162,16 +165,16 @@
             </div>
 
             <!--<div class="invest">-->
-                <!--<span>5885$</span>-->
-                <!--<p>Прибыль за год</p>-->
-                <!--<span>522$</span>-->
-                <!--<p>Прибыль в месяц</p>-->
+            <!--<span>5885$</span>-->
+            <!--<p>Прибыль за год</p>-->
+            <!--<span>522$</span>-->
+            <!--<p>Прибыль в месяц</p>-->
             <!--</div>-->
             <!--<div class="invest">-->
-                <!--<span>544$</span>-->
-                <!--<p>за пол года</p>-->
-                <!--<span>5$</span>-->
-                <!--<p>в день</p>-->
+            <!--<span>544$</span>-->
+            <!--<p>за пол года</p>-->
+            <!--<span>5$</span>-->
+            <!--<p>в день</p>-->
             <!--</div>-->
 
         </div>
@@ -195,7 +198,7 @@
 
 
 
-<section class="mavro-team">
+<section class="mavro-team" id="section-4">
     <div class="mavro-team-content">
         <h2 class="mavro-team-header">Команда MAVRO</h2>
         <h3 class="mavro-team-subheader">О компании</h3>
@@ -253,19 +256,19 @@
 <section class="block-bottom-menu">
     <div class="bottom-menu-content">
         <a href="" class="logo-bottom"></a>
-        <nav class="bottom-nav">
+        <nav class="bottom-nav" id="menu-footer">
             <ul>
                 <li>
-                    <a href="">Новости</a>
+                    <a href="#section-1">Новости</a>
                 </li>
                 <li>
-                    <a href="">Как работает</a>
+                    <a href="#section-2">Как работает</a>
                 </li>
                 <li>
-                    <a href="">Калькулятор</a>
+                    <a href="#section-3">Калькулятор</a>
                 </li>
                 <li>
-                    <a href="">Команда</a>
+                    <a href="#section-4">Команда</a>
                 </li>
             </ul>
         </nav>
@@ -291,19 +294,20 @@
 </footer>
 
 
-                <!--
-                TODO
-                transition animation on hover objects,
-                refactoring,
-                compressed images,
-                a href to menu and all clickable elements
-                add anchor links for menu <a>
-                -->
+                    <!--
+                    TODO
+                    transition animation on hover objects,
+                    refactoring,
+                    compressed images,
+                    a href to menu and all clickable elements
+                    add anchor links for menu <a>
+                    -->
 
 
 
 
-<!-- <script type="text/javascript" src="js/script.js"></script> -->
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 
 </body>
 
