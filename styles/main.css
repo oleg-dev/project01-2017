@@ -487,6 +487,7 @@ button.watch-video {
 .notebook-img {
     background: url(../media/images/notebook.png) no-repeat;
     background-size: contain;
+    background-position-x: center;
     width: 751px;
     height: 433px;
     margin: 0 auto;
@@ -803,17 +804,17 @@ footer {
     .top-nav {
         display:none;
     }
-    .menu-sandwich:focus + .top-nav.nav-2 {
+    .menu-sandwich:active + .top-nav.nav-2 {
         display: block;
         position: absolute;
         top: 10px;
         width: 100%;
         background: rgba(18, 57, 152, 0.8);
     }
-    .menu-sandwich:focus + .top-nav.nav-2 ul {
+    .menu-sandwich:active + .top-nav.nav-2 ul {
         margin-left: 0;
     }
-    .menu-sandwich:focus + .top-nav.nav-2 ul li {
+    .menu-sandwich:active + .top-nav.nav-2 ul li {
         display: block;
         width: 50%;
         margin: 0 auto;
@@ -822,7 +823,7 @@ footer {
         text-align: center;
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
-    .menu-sandwich:focus + .top-nav.nav-2 > ul > li:last-of-type {
+    .menu-sandwich:active + .top-nav.nav-2 > ul > li:last-of-type {
         display: block;
         margin: 0 auto;
     }
@@ -1051,4 +1052,133 @@ footer {
     .play-video {
         top: 50px;
     }
+    .news-content {
+        width: 96%;
+        padding-top: 160px;
+    }
+    .news-header {
+        font-size: 8em;
+        margin: 0;
+    }
+    .button-wrap {
+        width: 60%;
+    }
+    .mavro-team {
+        height: 900px;
+    }
+    .notebook-img {
+        height: 250px;
+    }
+    .block-statistic {
+        padding-top: 50px;
+    }
+    .slider-wrap {
+        margin-top: 20px;
+    }
+    .buttons-wrap {
+        font-size: 80%;
+    }
+    .bottom-nav ul {
+        margin-left:0;
+        font-size: 95%;
+    }
+    .bottom-nav ul li {
+        margin-right: 8px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .block-statistic {
+        padding-top: 100px;
+    }
+    .calculator {
+        background-size: auto 29%;
+    }
+    .calculator .mouse-icon {
+        left: 37%;
+    }
+    .mavro-team-content {
+        font-size: 90%;
+    }
+    .mavro-team {
+        height: 840px;
+    }
+    .block-statistic {
+        padding-top: 75px;
+    }
+    .contacts {
+        width: 60%;
+    }
+    .button-wrap {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 350px) {
+    .news-content {
+        font-size: 110%;
+    }
+    .block-statistic {
+        padding-top: 100px;
+    }
+    .calculator {
+        background-size: auto 32%;
+    }
+    .play-video {
+        top: 20px;
+    }
+    .buttons-wrap {
+        width: 236px;
+        font-size: 100%;
+    }
+    .mavro-team {
+        height: 945px;
+    }
+    .contacts {
+        width: 55%;
+    }
+}
+
+
+/*========decoration=====*/
+
+#menu-footer a:after {
+    display: block;
+    content: "";
+    height: 3px;
+    width: 0%;
+    background-color: #00bdc7;
+    transition: width .4s ease-in-out;
+}
+#menu-footer a:hover:after,
+#menu-footer a:focus:after {
+    width: 100%;
+}
+
+#menu a:hover{
+    color:#1abc9c;
+}
+.sign-in:hover {
+    transition:1s 0s ease;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+    background-color: #17a689;
+}
+
+button.watch-video:hover {
+    transition:1s 0s ease;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+    background-color: #00a5ae;
+}
+button.register:hover{
+    color:#00a5ae;
+}
+.calculator .mouse-icon:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition:1s 0s ease;
+}
+.try-mavro-text{
+    color:white;
+}
+.try-mavro-text:hover{
+    color:#00a5ae;
 }
