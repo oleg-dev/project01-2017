@@ -5,7 +5,6 @@
 /*======================== header styles ============================*/
 
 header {
-    /*background: rgba(0, 255, 0, 0.1);*/
     height: 51px;
     max-width: 1170px;
     margin: auto;
@@ -15,7 +14,7 @@ header {
     justify-content: space-between;
     vertical-align: bottom;
     padding-top: 55px;
-    position: fixed;
+    position: absolute;
     color: #fff;
     z-index: 5;
 }
@@ -33,6 +32,7 @@ header .mavro-logo {
     font: bold 0.82em PTSans;
     font-style: bold;
     text-shadow: 0 0 8px #093a93;
+    position: fixed;
 }
 .top-nav ul {
     padding-top: 18px;
@@ -66,8 +66,11 @@ header .mavro-logo {
     border: none;
     margin-top: 11px;
     display:none;
+    position: fixed;
+    top: 10px;
+    right: 15px;
+    z-index: 10;
 }
-
 .try-mavro {
     width: 193px;
     border: 1px solid rgba(255, 255, 255, 0.23);
@@ -119,16 +122,12 @@ section.block-news {
     width:100%;
 }
 .news-content-wrap {
-    /*background: rgba(0,0,255,0.1);*/
     height:100%;
     max-width: 1170px;
     margin: 0 auto;
     color: #fff;
-    /*display: flex;*/
-    /*align-items: center;*/
 }
 .news-content {
-    /*background: rgba(0,255,0,0.1);*/
     height: 365px;
     width: 387px;
     padding-top: 220px;
@@ -154,7 +153,6 @@ section.block-news {
     border-radius: 250px;
     margin-top: 35px;
 }
-
 .buttons-wrap button {
     height: 100%;
     font: bold 0.88em/1 PTSans;
@@ -164,7 +162,6 @@ section.block-news {
     text-transform: uppercase;
     border: none;
 }
-
 button.register {
     background: none;
     width: 171px;
@@ -207,11 +204,8 @@ button.watch-video {
     width:100%;
     height:100%;
     position: relative;
-    /*background:url("../media/images/section2-overlay-bg.png") no-repeat;*/
-    /*background-size: contain;*/
 }
 .section2-content {
-    /*height: 100%;*/
     max-width: 1170px;
     margin:0 auto;
     padding-top:55px;
@@ -225,7 +219,6 @@ button.watch-video {
     margin-bottom: 58px;
 }
 .text-content {
-    /*background: rgba(0,255,0,0.2);*/
     width: 468px;
     height:390px;
     font: 400 0.99em/1.5 PTSans-Regular;
@@ -257,17 +250,14 @@ button.watch-video {
 .calculator{
     width: 100%;
     background: url("../media/images/section-3-bg.png") no-repeat;
-    /*background-size: 100%;*/
     background-position: bottom;
     background-color: #f1f4f9;
 }
-
 .calculator > div{
     max-width: 810px;
     margin:0 auto;
     font: 400 0.99em/1.5 PTSans-Regular;
 }
-
 .calculator .mouse-icon{
     margin-top: -36px;
     position: relative;
@@ -299,22 +289,18 @@ button.watch-video {
 .slider-wrap div{
     position: relative;
     left: -60px;
-
 }
 .slider-wrap > div{
     text-align: center;
 }
-
 .slider-wrap .slider-point-img{
     width: 80px;
     height: 80px;
     background-image: url(../media/images/slider-point-value.png);
 }
-
 .slider-img{
     width: 100%;
 }
-
 .prise-wrap{
     border-radius: 6px;
     background-color: #e1f9fb;
@@ -344,7 +330,6 @@ button.watch-video {
 .invest{
     float:left;
     text-align: center;
-    /*border-right: 2px dotted #b4b7bc;*/
 }
 
 .invest:nth-of-type(2) {
@@ -357,7 +342,6 @@ button.watch-video {
     height: 85px;
     margin-bottom: 27px;
 }
-
 .invest:last-child{
     border:none;
 }
@@ -387,7 +371,6 @@ button.watch-video {
     padding-bottom: 10px;
     text-transform: uppercase;
 }
-
 
 /*======================== end calculator block styles ==========================*/
 
@@ -507,9 +490,7 @@ button.watch-video {
     position: relative;
     cursor:pointer;
 }
-
 /*====================== end block mavro-team styles ========================*/
-
 
 
 
@@ -528,7 +509,6 @@ button.watch-video {
     justify-content: space-between;
 }
 .stat-point {
-    /*background:rgba(0,0,255,0.3);*/
     min-width:50px;
     height:95px;
 }
@@ -553,7 +533,6 @@ button.watch-video {
     color:#292935;
     text-align: center;
 }
-
 /*==================== end block statistic styles ======================*/
 
 
@@ -625,7 +604,6 @@ h4.join {
     background:url(../media/images/logo-black.png);
     background-size: contain;
 }
-
 .bottom-nav {
     text-transform: uppercase;
     font: bold 0.82em/1 PTSans;
@@ -650,7 +628,6 @@ h4.join {
 }
 
 /*================ end bottom menu styles ==================*/
-
 
 
 
@@ -708,17 +685,12 @@ footer {
 /*==================== adaptation styles ===================*/
 @media screen and (max-width: 1200px) {
     body section,
-    footer {
-
-    }
-    body section,
     header,
     footer {
         width:96% !important;
         padding-left:2% !important;
         padding-right:2% !important;
     }
-
     .devices-img {
         width: 50%;
         top: 0;
@@ -765,7 +737,6 @@ footer {
     }
     .ipad {
         width: 94%;
-        /* height: auto; */
         margin: 20px auto 0 auto;
         background-size: contain;
     }
@@ -793,7 +764,6 @@ footer {
          background: none;
     }
 }
-
 @media screen and (max-width: 900px) {
     .top-nav > ul > li {
         margin-right: 20px;
@@ -804,17 +774,17 @@ footer {
     .top-nav {
         display:none;
     }
-    .menu-sandwich:active + .top-nav.nav-2 {
+    .menu-sandwich + .top-nav.nav-2 {
         display: block;
-        position: absolute;
+        position: fixed;
         top: 10px;
         width: 100%;
         background: rgba(18, 57, 152, 0.8);
     }
-    .menu-sandwich:active + .top-nav.nav-2 ul {
+    .menu-sandwich + .top-nav.nav-2 ul {
         margin-left: 0;
     }
-    .menu-sandwich:active + .top-nav.nav-2 ul li {
+    .menu-sandwich + .top-nav.nav-2 ul li {
         display: block;
         width: 50%;
         margin: 0 auto;
@@ -823,7 +793,7 @@ footer {
         text-align: center;
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
-    .menu-sandwich:active + .top-nav.nav-2 > ul > li:last-of-type {
+    .menu-sandwich + .top-nav.nav-2 > ul > li:last-of-type {
         display: block;
         margin: 0 auto;
     }
@@ -867,14 +837,10 @@ footer {
     }
 }
 @media screen and (max-width: 800px) {
-    body {
-        /*font-size: 120%;*/
-    }
     .news-content {
         width: 465px;
     }
     .invest-wrap {
-        /*font-size: 105%;*/
         height: auto;
     }
     .invest:nth-of-type(2) {
@@ -891,7 +857,7 @@ footer {
     }
     .menu-sandwich:hover + .top-nav.nav-2 {
         display: block;
-        position: absolute;
+        position: fixed;
         top: 10px;
         width: 100%;
         background: rgba(18, 57, 152, 0.8);
@@ -915,14 +881,6 @@ footer {
     .sign-in-wrap {
         z-index: -1;
     }
-    /*.news-content {*/
-        /*padding-top: 88px;*/
-        /*width: 73%;*/
-        /*margin: 0 auto;*/
-        /*display: block;*/
-        /*text-align: center;*/
-        /*font-size: 129%;*/
-    /*}*/
     .buttons-wrap {
         margin: 35px auto 0 auto;
         font-size: 82%;
@@ -983,11 +941,7 @@ footer {
         height: 140px;
     }
 }
-
 @media screen and (max-width: 610px) {
-    body {
-
-    }
     .balans-mavro {
         font-size: 85%;
     }
@@ -1016,6 +970,12 @@ footer {
     .contacts {
         width: 40%;
     }
+    .bitcoin-section {
+        background: #f1f4f9;
+    }
+    .ipad {
+        height: 290px;
+    }
 }
 @media screen and (max-width: 540px) {
     header {
@@ -1030,7 +990,7 @@ footer {
         margin-top: 10px;
     }
     .menu-sandwich {
-        position: absolute;
+        position: fixed;
         right: 5px;
         top: 5px;
     }
@@ -1069,6 +1029,9 @@ footer {
     .notebook-img {
         height: 250px;
     }
+    .calculator {
+        background-size: 650% auto;
+    }
     .block-statistic {
         padding-top: 50px;
     }
@@ -1084,6 +1047,15 @@ footer {
     }
     .bottom-nav ul li {
         margin-right: 8px;
+    }
+    .try-mavro {
+        float: none;
+        margin: 0 auto;
+    }
+    .sign-in {
+        display: block;
+        margin: 11px auto 0 auto;
+        float:none;
     }
 }
 @media screen and (max-width: 400px) {
@@ -1114,29 +1086,124 @@ footer {
 }
 @media screen and (max-width: 350px) {
     .news-content {
-        font-size: 110%;
+        font-size: 80%;
+        padding-top: 250px;
     }
     .block-statistic {
-        padding-top: 100px;
+        padding-top: 50px;
+    }
+    section.block-news {
+        height: 630px;
+    }
+    .section2-content {
+        padding-top: 20px;
+    }
+    .how-works {
+        font-size: 85%;
+    }
+    .how-works-header {
+        margin-bottom: 10px;
+        font-size: 3.5em;
+    }
+    .text-content-p1 {
+        margin-bottom: 5px;
+    }
+    .text-content-p2 {
+        margin-bottom: 5px;
     }
     .calculator {
-        background-size: auto 32%;
+        background:none;
+    }
+    .calculator-header {
+        font-size: 3em;
+    }
+    .slider-wrap {
+        margin-top: -15px;
+    }
+    .invest-wrap {
+        margin-top: 20px;
+    }
+    .invest-wrap .invest:nth-of-type(1) .invest-content2 {
+        padding-top: 20px;
     }
     .play-video {
         top: 20px;
     }
     .buttons-wrap {
-        width: 236px;
+        width: 197px;
         font-size: 100%;
     }
+    .bitcoin-section {
+        height: 360px;
+        background: #f1f4f9;
+    }
+    .ipad {
+        margin: 0 auto;
+    }
+    .chart {
+        height: 92px;
+        margin-top: -3%;
+    }
+    .mavro-team-content-text {
+        font-size: 1.05em;
+    }
+    button.register {
+        width: 189px;
+        float: none;
+        margin-left: 0;
+    }
+    button.watch-video {
+        margin-top: 15px;
+    }
+    .balans-mavro {
+        background-color: #123998;
+    }
     .mavro-team {
-        height: 945px;
+        height: 730px;
+        background-size: cover;
+    }
+    .mavro-team-header {
+        font-size:3em;
+    }
+    .mavro-team-header:after {
+        background: none;
+    }
+    .mavro-team-subheader {
+        margin: 0 0 15px 15px;
+        font-size:2em;
+    }
+    .mavro-team-content {
+        padding-top: 30px;
     }
     .contacts {
         width: 55%;
     }
+    .notebook-img {
+        height: 166px;
+    }
+    .statistic-content {
+        font-size: 120%;
+    }
+    .block-download {
+        padding-top: 30px;
+    }
+    h4.join {
+        margin-bottom: 20px;
+        font-size: 1.2em;
+    }
+    .button-wrap {
+        font-size: 75%;
+    }
+    .bottom-nav ul li {
+        margin-right: 6px;
+    }
+    .text-content-p1 span {
+        font: 400 2em AkzidenzGroteskPro-LightCn;
+    }
+    .stat-point {
+        margin-bottom: 15px;
+    }
 }
-
 
 /*========decoration=====*/
 

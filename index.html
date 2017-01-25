@@ -4,25 +4,19 @@
     <title>MAVRO. Новая криптовалюта</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="description" content="" />
-    <!-- <meta name="keywords" content="" /> -->
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <meta name="author" content="MAVRO.ORG">
     <link rel="stylesheet" href="styles/fonts.css" type="text/css" />
     <link rel="stylesheet" href="styles/reset.css" type="text/css" />
     <link rel="stylesheet" href="styles/main.css" type="text/css" />
     <link rel="stylesheet" href="styles/iestyle.css" type="text/css" />
-    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> -->
-
+    <link rel="shortcut icon" href="media/images/favicon.ico" type="image/x-icon" />
     <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </head>
 
 <body>
-
-
 <header>
-    <!--<div class="logo-mavro"></div>-->
-    <!--<img src="media/images/logo-white.png" alt="Logo Mavro" class="mavro-logo">-->
     <a href="" class="mavro-logo"></a>
     <nav class="top-nav">
         <ul id="menu">
@@ -48,7 +42,7 @@
         <button class="sign-in">Войти</button>
     </div>
 
-    <button class="menu-sandwich"></button>
+    <button class="menu-sandwich" id="mobile-menu"></button>
 
     <nav class="top-nav nav-2">
         <ul id="sandwich-menu">
@@ -66,7 +60,6 @@
             </li>
         </ul>
     </nav>
-
 </header>
 
 <section class="block-news" id="section-1">
@@ -132,7 +125,6 @@
         </div>
 
         <div class="invest-wrap">
-
             <div class="invest">
                 <div class="invest-content1">
                     <span>585$</span>
@@ -143,7 +135,6 @@
                     <p>в неделю</p>
                 </div>
             </div>
-
             <div class="invest">
                 <div class="invest-content1">
                     <span>5885$</span>
@@ -154,7 +145,6 @@
                     <p>Прибыль в месяц</p>
                 </div>
             </div>
-
             <div class="invest">
                 <div class="invest-content1">
                     <span>544$</span>
@@ -165,7 +155,6 @@
                     <p>в день</p>
                 </div>
             </div>
-
         </div>
         <div class="invest-wrap">
             <div class="balans-mavro">
@@ -174,9 +163,7 @@
             </div>
         </div>
     </div>
-
 </section>
-
 
 <section class="bitcoin-section">
     <h2 class="calculator-header">График роста Bitcoin</h2>
@@ -184,8 +171,6 @@
         <div class="chart"></div>
     </div>
 </section>
-
-
 
 <section class="mavro-team" id="section-4">
     <div class="mavro-team-content">
@@ -231,7 +216,6 @@
     </div>
 </section>
 
-
 <section class="block-download">
     <h4 class="join">Присоединяйся к самому глобальному проекту 2017 — MAVRO.ORG</h4>
     <div class="button-wrap">
@@ -240,7 +224,6 @@
         <button class="button-consultant">Консультанты системы</button>
     </div>
 </section>
-
 
 <section class="block-bottom-menu">
     <div class="bottom-menu-content">
@@ -282,21 +265,15 @@
     </div>
 </footer>
 
-
-                    <!--
-                    TODO
-                    transition animation on hover objects,
-                    refactoring,
-                    compressed images,
-                    a href to menu and all clickable elements
-                    add anchor links for menu <a>
-                    -->
-
-
-
-
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+
+<script type="text/javascript">
+    jQuery(document).ready(function($){
+        $('.nav-2').hide();
+        $('#mobile-menu').click(function(){$(this).next().toggle()});
+    });
+</script>
 
 </body>
 
