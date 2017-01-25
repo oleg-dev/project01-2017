@@ -50,9 +50,22 @@ header .mavro-logo {
 .top-nav > ul > li a {
     color:white;
 }
+.top-nav.nav-2 {
+    display:none;
+}
 .sign-in-wrap {
     width: 291px;
     height: 49px;
+}
+.menu-sandwich {
+    width: 32px;
+    height: 32px;
+    background: url(../media/images/menu-icon.png) no-repeat;
+    background-size: contain;
+    outline: none;
+    border: none;
+    margin-top: 11px;
+    display:none;
 }
 
 .try-mavro {
@@ -791,5 +804,101 @@ footer {
         width: 260px;
         margin: 0 50px;
     }
+}
+@media screen and (max-width: 768px) {
+    .menu-sandwich {
+        display: block;
+    }
+    .top-nav {
+        display:none;
+    }
+    .menu-sandwich:hover + .top-nav.nav-2 {
+        display: block;
+        position: absolute;
+        top: 10px;
+        width: 100%;
+        background: rgba(18, 57, 152, 0.8);
+    }
+    .menu-sandwich:hover + .top-nav.nav-2 ul {
+        margin-left: 0;
+    }
+    .menu-sandwich:hover + .top-nav.nav-2 ul li {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+        font-size: 170%;
+        height: 40px;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .menu-sandwich:hover + .top-nav.nav-2 > ul > li:last-of-type {
+        display: block;
+        margin: 0 auto;
+    }
+    header {
+        width:100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .sign-in-wrap {
+        z-index: -1;
+    }
+    .news-content {
+        padding-top: 88px;
+        width: 73%;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        font-size: 129%;
+    }
+    .buttons-wrap {
+        margin: 35px auto 0 auto;
+        font-size: 82%;
+    }
+    .man-img {
+        width: 30%;
+        height: 260px;
+        right: 36%;
+        bottom: 0;
+    }
+    section.block-news {
+        background: url(../media/images/section-1-bg.jpg) no-repeat;
+        background-size: inherit;
+    }
+    .statistic-content {
+        font-size:140%;
+        flex-direction: column;
+    }
+    .stat-point {
+        height: 125px;
+        margin-bottom:30px;
+    }
+    .block-statistic {
+        height: auto;
+    }
+    .block-download {
+        font-size: 140%;
+        height: auto;
+    }
+    .button-wrap {
+        flex-direction: column;
+        margin: 0 auto;
+        width: 44%;
+        height: 150px;
+    }
+    .button-wrap button {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
 
+@media screen and (max-width: 610px) {
+    body {
+        font-size: 90%;
+    }
+    .man-img {
+        bottom: -38px;
+        width: 40%;
+        right: 31%;
+    }
 }
